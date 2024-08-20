@@ -46,8 +46,6 @@ namespace testando
             {
                 Console.Write(item);
             }
-            Console.WriteLine("");
-
         }
     }
 }
