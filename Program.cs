@@ -11,11 +11,9 @@ namespace testando
         static void Main(string[] args)
         {
             numerosRandom();
-
         }
         static void numerosRandom()
         {
-
             //numeros sort
             var alfab = "abcdefghijklmnopqrstuvwxyz";
             //instanciei um objeto da classe random
@@ -33,7 +31,6 @@ namespace testando
                 var k = pegandoLetraDoRandomAlfa.ToString();
                 //Adicionando na lista
                 lista.Add(k);
-
                 //usando o metodo da classe random
                 var ocv = oc.Next(0, 9);
                 //adicionadno na lista e fazendo a conversão para string
