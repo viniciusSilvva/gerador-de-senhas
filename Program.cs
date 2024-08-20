@@ -11,10 +11,10 @@ namespace testando
         static void Main(string[] args)
         {
             numerosRandom();
-
         }
         static void numerosRandom()
         {
+            //testando Commit 
 
             //numeros sort
             var alfab = "abcdefghijklmnopqrstuvwxyz";
@@ -33,7 +33,6 @@ namespace testando
                 var k = pegandoLetraDoRandomAlfa.ToString();
                 //Adicionando na lista
                 lista.Add(k);
-
                 //usando o metodo da classe random
                 var ocv = oc.Next(0, 9);
                 //adicionadno na lista e fazendo a conversão para string
@@ -46,8 +45,5 @@ namespace testando
             {
                 Console.Write(item);
             }
-            Console.WriteLine("");
-
-        }
     }
 }
