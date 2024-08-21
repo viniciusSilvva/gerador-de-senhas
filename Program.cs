@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
@@ -15,7 +15,6 @@ namespace testando
         }
         static void numerosRandom()
         {
-
             Console.WriteLine("Qual o tamanho da senha?");
             var tamanhoDaSenha = int.Parse(Console.ReadLine());
 
@@ -25,11 +24,7 @@ namespace testando
             Console.WriteLine("Quais numeros deseja colocar?");
             var numeros = int.Parse(Console.ReadLine());
 
-            var numberLeng = numeros.ToString
-            //numeros sort
-            var alfab = "abcdefghijklmnopqrstuvwxyz";
-            //instanciei um objeto da classe random
-
+            var numberLeng = numeros.ToString();
             Random oc = new Random();
           
             List<string> lista = new List<string>();
@@ -45,18 +40,11 @@ namespace testando
               
                 lista.Add(k);
 
-
                 var indiceNumeros = oc.Next(0, numberLeng.Length);
 
                 var pegandoNumeros = numberLeng[indiceNumeros];
 
                 lista.Add(pegandoNumeros.ToString());
-
-                //usando o metodo da classe random
-                var ocv = oc.Next(0, 9);
-                //adicionadno na lista e fazendo a conversão para string
-                lista.Add(ocv.ToString());
-
             }
             
             List<string> sublista = lista.GetRange(0, tamanhoDaSenha);
@@ -68,10 +56,9 @@ namespace testando
             {
                 Console.Write(item);
             }
-
             Console.WriteLine("");
             
-
         }
     }
 }
+
